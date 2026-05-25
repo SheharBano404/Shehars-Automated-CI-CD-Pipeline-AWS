@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehar's CI/CD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="grid-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">Sherrys | DevOps<span class="highlight">.flow</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Introduction</a></li>
+            <li><a href="#pipeline">Architecture</a></li>
+            <li><a href="#simulation" class="cta-link">Start Build</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero" class="hero">
+        <div class="hero-content reveal">
+            <div class="badge">BSIET 5th Sem Project</div>
+            <h1>Automating the <br><span class="gradient-text">Cloud Journey.</span></h1>
+            <p class="subtitle">
+                A seamless || Code to Cloud || pipeline. 
+                Integrating <strong>Jenkins</strong>, <strong>SonarQube</strong>, and <strong>Docker</strong> for zero-downtime deployment on AWS.
+            </p>
+            <p class="author">Engineered by <strong>Shehar Bano</strong> | UOL</p>
+            
+            <a href="#simulation" class="main-btn">
+                Trigger System <span class="arrow">→</span>
+            </a>
+        </div>
+        
+        <div class="hero-visual reveal delay-1">
+            <svg class="hero-svg" viewBox="0 0 350 350">
+                <defs>
+                    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:var(--primary); stop-opacity:0" />
+                        <stop offset="50%" style="stop-color:var(--primary); stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:var(--secondary); stop-opacity:0" />
+                    </linearGradient>
+                </defs>
+
+                <path id="path1" d="M60 60 C 200 60, 280 120, 290 180 S 120 280, 100 320" 
+                      fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+                
+                <path d="M60 60 C 200 60, 280 120, 290 180 S 120 280, 100 320" 
+                      fill="none" stroke="url(#lineGrad)" stroke-width="3" 
+                      class="data-stream"/>
+            </svg>
+
+            <div class="cyber-card pos-1">
+                <div class="signal-dot cyan"></div>
+                <div class="card-text">
+                    <small>DEV::LOCAL</small>
+                    <strong>COMMIT</strong>
+                </div>
+            </div>
+
+            <div class="cyber-card pos-2">
+                <div class="signal-dot purple"></div>
+                <div class="card-text">
+                    <small>SYS::DOCKER</small>
+                    <strong>BUILD</strong>
+                </div>
+            </div>
+
+            <div class="cyber-card pos-3">
+                <div class="signal-dot pink"></div>
+                <div class="card-text">
+                    <small>AWS::CLOUD</small>
+                    <strong>DEPLOY</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="pipeline" class="stages-section">
+        <h2 class="reveal">The Architecture Flow</h2>
+        
+        <div class="flow-container">
+            <div class="flow-step reveal">
+                <div class="tech-card">
+                    <div class="glow-effect"></div>
+                    <h3>Local Git</h3>
+                    <p>Source Code</p>
+                </div>
+            </div>
+
+            <div class="connector-line reveal"><div class="beam"></div></div>
+
+            <div class="flow-step reveal delay-1">
+                <div class="tech-card">
+                    <div class="glow-effect"></div>
+                    <h3>GitHub</h3>
+                    <p>Webhook</p>
+                </div>
+            </div>
+
+            <div class="connector-line reveal"><div class="beam"></div></div>
+
+            <div class="flow-step reveal delay-2">
+                <div class="tech-card center-piece">
+                    <div class="glow-effect"></div>
+                    <h3>Jenkins</h3>
+                    <p>CI Server</p>
+                </div>
+            </div>
+
+            <div class="connector-line reveal"><div class="beam"></div></div>
+
+            <div class="flow-step reveal delay-3">
+                <div class="tech-card">
+                    <div class="glow-effect"></div>
+                    <h3>SonarQube</h3>
+                    <p>Audit</p>
+                </div>
+            </div>
+
+            <div class="connector-line reveal"><div class="beam"></div></div>
+
+            <div class="flow-step reveal delay-4">
+                <div class="tech-card">
+                    <div class="glow-effect"></div>
+                    <h3>Docker</h3>
+                    <p>Build Img</p>
+                </div>
+            </div>
+
+            <div class="connector-line reveal"><div class="beam"></div></div>
+
+            <div class="flow-step reveal delay-5">
+                <div class="tech-card final-step">
+                    <div class="glow-effect"></div>
+                    <h3>AWS EC2</h3>
+                    <p>Production</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulation" class="terminal-section">
+        <div class="levitating-wrapper">
+            <div class="ambient-shadow">
+                <div class="shadow-layer-3"></div>
+            </div>
+    
+            <div class="clean-console">
+                <div class="holo-shine"></div>
+    
+                <div class="console-header">
+                    <div class="traffic-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="console-title">root@sheharbano:~/deployment</div>
+                    <div class="status-badge">Idle</div>
+                </div>
+    
+                <div class="console-body" id="logs">
+                    <p class="log-entry"><span class="timestamp">[10:00:01]</span> System ready.</p>
+                    <p class="log-entry"><span class="timestamp">[10:00:02]</span> Waiting for manual trigger...</p>
+                </div>
+    
+                <div class="console-footer">
+                    <button id="trigger-btn" class="stardust-btn">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">INITIATE_BUILD</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Designed by <span class="highlight">Shehar Bano</span> @2006</p>
+            <p class="uni">University of Lahore • Information Engineering Technology</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
