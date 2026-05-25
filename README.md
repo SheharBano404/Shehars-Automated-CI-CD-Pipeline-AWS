@@ -37,9 +37,9 @@ This project demonstrates a robust **CI/CD (Continuous Integration & Continuous 
 ![Jenkins](https://img.shields.io/badge/JENKINS-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
 ![SonarQube](https://img.shields.io/badge/SONARQUBE-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/UBUNTU-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![SSH](https://img.shields.io/badge/SSH-666666?style=for-the-badge&logo=ssh&logoColor=white)
 ![Docker](https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![SSH](https://img.shields.io/badge/SSH-666666?style=for-the-badge&logo=ssh&logoColor=white)
 ---
 
 ## 🛡 Resource Cleanup
