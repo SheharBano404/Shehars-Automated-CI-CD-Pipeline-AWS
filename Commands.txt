@@ -1,0 +1,102 @@
+________________________________________________________________________________________________
+
+JENKINS SERVER TREMINAL
+________________________________________________________________________________________________
+
+sudo apt update
+
+sudo apt install openjdk-17-jre
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+sudo apt install jenkins
+
+systemctl status jenkins
+
+________________________________________________________________________________________________
+
+SONARQUBE SERVER TREMINAL
+________________________________________________________________________________________________
+
+sudo apt update
+
+sudo apt install openjdk-17-jre
+
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.0.65466.zip
+
+sudo apt install unzip
+
+ls
+
+unzip (file).zip
+
+cd file
+
+ls
+
+cd bin
+
+ls linux-x84-64
+
+ls
+
+./sonar.sh start
+
+________________________________________________________________________________________________
+
+DOCKER SERVER TREMINAL
+________________________________________________________________________________________________
+
+sudo apt update
+
+# Add Docker's official GPG key:
+sudo apt update
+sudo apt install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+# Add the repository to Apt sources:
+sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+Types: deb
+URIs: https://download.docker.com/linux/ubuntu
+Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+Components: stable
+Signed-By: /etc/apt/keyrings/docker.asc
+EOF
+sudo apt update
+
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+________________________________________________________________________________________________
+
+JENKINS SERVER TREMINAL
+________________________________________________________________________________________________
+
+ssh-keygen -t rsa -b 4096
+
+cat ~/.ssh/id_rsa.pub
+________________________________________________________________________________________________
+
+DOCKER SERVER TREMINAL
+________________________________________________________________________________________________
+
+mkdir -p ~/.ssh
+
+nano ~/.ssh/authorized_keys
+
+chmod 700 ~/.ssh
+
+chmod 600 ~/.ssh/authorized_keys
+________________________________________________________________________________________________
+
+JENKINS SERVER TREMINAL
+________________________________________________________________________________________________
+
+cat ~/.ssh/id_rsa
+
+
+
+
