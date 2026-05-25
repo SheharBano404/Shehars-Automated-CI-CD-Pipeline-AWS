@@ -40,6 +40,17 @@ This project demonstrates a robust **CI/CD (Continuous Integration & Continuous 
 ![SSH](https://img.shields.io/badge/SSH-666666?style=for-the-badge&logo=ssh&logoColor=white)
 ![Docker](https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
+---
+
+## 📂 Project Assets
+Everything you need to replicate or review this project is included in this repository:
+
+* 📄 **Full Implementation Guide**: Step-by-step documentation for the CI/CD workflow.
+* 🖥 **Setup & Pipeline Commands:**: Essential scripts for configuring the automation.
+* 🎥 **Demo Walkthrough**: A complete video guide demonstrating the end-to-end pipeline procedure.
+* 🛠 **Project Source Code**: The application code and configuration files used for deployment.
+
 ---
 
 ## 🛡 Resource Cleanup
