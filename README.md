@@ -14,7 +14,7 @@ This project demonstrates a robust **CI/CD (Continuous Integration & Continuous 
 
 ---
 
-## 🏗 Workflow Architecture
+## 🏗 Workflow
 <img width="1535" height="861" alt="image" src="https://github.com/user-attachments/assets/dc989269-35f6-480a-911b-bdd635e124ba" />
 
 ### **The Pipeline Process:**
@@ -62,7 +62,7 @@ To prevent unnecessary AWS billing, ensure you perform these steps:
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 **Shehar Bano**
 *Passionate about DevOps, Cloud Automation, and Clean Code.*
 
